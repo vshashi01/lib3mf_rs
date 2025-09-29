@@ -66,7 +66,7 @@ mod tests {
 
     #[test]
     fn can_read_3mf_file() {
-        let filepath = PathBuf::from("mgx-iron_giant_single.3mf")
+        let filepath = PathBuf::from("data/mgx-iron_giant_single.3mf")
             .canonicalize()
             .unwrap();
 
@@ -128,7 +128,7 @@ mod tests {
 
     #[test]
     fn roundtrip_3mf_file() {
-        let filepath = PathBuf::from("mgx-iron_giant_single.3mf")
+        let filepath = PathBuf::from("data/mgx-iron_giant_single.3mf")
             .canonicalize()
             .unwrap();
 
@@ -136,7 +136,7 @@ mod tests {
         let result = get_3mf_model_from_file(filepath, &mut model);
         assert_eq!(result, 0);
 
-        let write_filepath = PathBuf::from("out.3mf");
+        let write_filepath = PathBuf::from("target/out.3mf");
         let write_result = write_3mf_to_file(write_filepath, &mut model);
         assert_eq!(write_result, 0);
     }
