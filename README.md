@@ -22,6 +22,7 @@ Any contributions to extend the examples are welcome.
 To build this crate, you need:
 
 - Rust (latest stable recommended)
+- The C headers of the C Bindings provided by lib3mf placed in the `includes` directory at the root of this crate. This can be downloaded from the release archive on the main lib3mf repository.
 - The lib3mf binaries (lib3mf.lib & lib3mf dynamic libraries) placed in the `lib3mf` directory at the root of this crate. This can be downloaded from the release archive on the main lib3mf repository.
 
 Build with:
