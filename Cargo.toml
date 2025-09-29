@@ -1,0 +1,11 @@
+[package]
+name = "lib3mf_rs"
+version = "0.1.0"
+edition = "2024"
+build = "build.rs"
+exclude = ["lib3mf/**"]
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "0.72.1"
