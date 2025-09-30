@@ -9,7 +9,7 @@
 
 ## Current tested version
 
-The library was last tested with the binaries from version 2.4.1
+**The library was last tested with the binaries from version 2.4.1**
 
 ## Examples
 
@@ -24,6 +24,28 @@ To build this crate, you need:
 - Rust (latest stable recommended)
 - The C headers of the C Bindings provided by lib3mf placed in the `includes` directory at the root of this crate. This can be downloaded from the release archive on the main lib3mf repository.
 - The lib3mf binaries (lib3mf.lib & lib3mf dynamic libraries) placed in the `lib3mf` directory at the root of this crate. This can be downloaded from the release archive on the main lib3mf repository.
+
+Shell scripts are provided with the ability to set the desired versions to download and place on the right folders for making the building process easier.
+
+On Windows
+
+```sh
+.\download_lib3mf.ps1 -Version "2.4.1"
+.\download_lib3mf.ps1 # Defaults to last tested version on Windows
+```
+
+On Linux
+
+```sh
+bash download_lib3mf.sh 2.4.1 Linux
+bash download_lib3mf.sh  # Defaults to last tested version
+```
+
+On MacOS
+
+```sh
+bash download_lib3mf.sh 2.4.1 Darwin
+```
 
 Build with:
 
